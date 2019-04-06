@@ -1,1 +1,1 @@
-# A repo for configuration files, guides, and other types of useful files.
+## A repo for configuration files, guides, and other useful files.
