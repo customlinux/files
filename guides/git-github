@@ -1,0 +1,33 @@
+#------------------------------------------------------------------
+# Set up git ------------------------------------------------------
+git config --list
+git config --global user.name "Navtoj Chahal"
+git config --global user.email "navtojchahal@gmail.com"
+git config --global credential.helper 'cache --timeout=1800'
+#------------------------------------------------------------------
+# Create new repository -------------------------------------------
+1. Create repo in github (https://github.com/new)
+# Create repo directory
+2. mkdir name_of_repo
+# Change current directory to repo's directory
+3. cd name_of_repo
+# Add/Edit files in repo's local directory
+4. echo "the_readme_file" >> README.md
+# Initialize git in repo's directory
+5. git init
+# Check branch status / changes to commit
+git status
+
+git add name(s)_of_file(s) # Or "git add ." to add all files
+git status
+git remote add origin https://github.com/navtojchahal/name_of_repo
+git commit -m "Commit message"
+git push -u origin master
+#---------------------------------------------------------------
+# to update local repo
+git pull
+# to update remote repo
+git add name(s)_of_file(s)
+git commit -m "Commit message"
+git push
+#------------------------------------------------------------------
