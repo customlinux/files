@@ -1,13 +1,13 @@
-# -------------------------------------------------------------------------------
-# Set up git --------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Set up git ------------------------------------------------------------------
 # List git configuration: git config --list
 git config --global user.name "Navtoj Chahal"
 git config --global user.email "navtojchahal@gmail.com"
 git config --global credential.helper 'cache --timeout=1800'
 # Git Docs: https://git-scm.com/docs/
 
-# -------------------------------------------------------------------------------
-# Create new repository ---------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Create new repository -------------------------------------------------------
 1. Create repo in github (https://github.com/new)
 # Create repo directory
 2. mkdir name_of_repo
@@ -28,19 +28,18 @@ git commit -m "a_commit_message"
 git remote add origin https://github.com/user_name/name_of_repo
 git push -u origin master
 
-# ----------------------------------------------------------------------------
-# To pull from remote repo ---------------------------------------------------
+# -----------------------------------------------------------------------------
+# To pull from remote repo ----------------------------------------------------
 git pull
 
-# ----------------------------------------------------------------------------
-# To push to remote repo -----------------------------------------------------
+# -----------------------------------------------------------------------------
+# To push to remote repo ------------------------------------------------------
 OPTION A:
-	1. git add name(s)_of_file(s)
-	2. git commit -m "a_commit_message"
-	3. git push
-OPTION B:
-	# To only stage previously added files that have been modified or deleted.
-	1. git commit -a -m "a_commit_message"
-	2. git push
+    1. git add name(s)_of_file(s)
+    2. git commit -m "a_commit_message"
+    3. git push
+OPTION B: To only stage previously added files that have been modified/deleted.
+    1. git commit -a -m "a_commit_message"
+    2. git push
 
-# ----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
