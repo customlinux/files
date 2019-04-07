@@ -1,0 +1,130 @@
+# Custom gsettings and dconf settings ---------------------------------------------------------
+
+# Plank - [net/launchpad/plank/docks/dock1]
+dconf write /net/launchpad/plank/docks/dock1/hide-mode "'window-dodge'"
+dconf write /net/launchpad/plank/docks/dock1/monitor "'eDP-1'"
+
+# Nautilus Terminal - [org/flozz/nautilus-terminal]
+dconf write /org/flozz/nautilus-terminal/default-show-terminal false
+
+# Gnome Background - [org/gnome/desktop/background]
+dconf write /org/gnome/desktop/background/picture-uri "'/usr/share/backgrounds/gnome/mojave-timed.xml'"
+
+# Gnome DateTime - [org/gnome/desktop/datetime]
+dconf write org/gnome/desktop/datetime/automatic-timezone true
+
+# Gnome UI - [org/gnome/desktop/interface]
+dconf write /org/gnome/desktop/interface/clock-format "'12h'"
+dconf write /org/gnome/desktop/interface/clock-show-date true
+dconf write /org/gnome/desktop/interface/clock-show-seconds true
+dconf write /org/gnome/desktop/interface/cursor-theme "'capitaine-cursors'"
+dconf write /org/gnome/desktop/interface/document-font-name "'Clear Sans 11'"
+dconf write /org/gnome/desktop/interface/font-name "'Clear Sans Medium, Medium 11'"
+dconf write /org/gnome/desktop/interface/icon-theme "'la-capitaine'"
+dconf write /org/gnome/desktop/interface/monospace-font-name "'Clear Sans Thin, weight=255 11'"
+dconf write /org/gnome/desktop/interface/show-battery-percentage true
+
+# Touchpad - [org/gnome/desktop/peripherals/touchpad]
+dconf write /org/gnome/desktop/peripherals/touchpad/tap-to-click true
+
+# Gnome Screensaver - [org/gnome/desktop/screensaver]
+dconf write /org/gnome/desktop/screensaver/picture-uri "'/usr/share/backgrounds/gnome/mojave-timed.xml'"
+
+# Search - [org/gnome/desktop/search-providers]
+dconf write /org/gnome/desktop/search-providers/disable-external true
+
+# Gnome Windows - [org/gnome/desktop/wm/preferences]
+dconf write /org/gnome/desktop/wm/preferences/action-double-click-titlebar "'none'"
+dconf write /org/gnome/desktop/wm/preferences/action-middle-click-titlebar "'toggle-maximize'"
+dconf write /org/gnome/desktop/wm/preferences/button-layout "':minimize,maximize,close'"
+dconf write /org/gnome/desktop/wm/preferences/resize-with-right-button false
+dconf write /org/gnome/desktop/wm/preferences/titlebar-font "'Clear Sans Bold 11'"
+
+# Image Viewer - [org/gnome/eog/ui]
+dconf write /org/gnome/eog/ui/sidebar false
+dconf write /org/gnome/eog/view/use-background-color false
+
+# System Monitor - [org/gnome/gnome-system-monitor]
+dconf write /org/gnome/gnome-system-monitor/current-tab "'resources'"
+dconf write /org/gnome/gnome-system-monitor/maximized true
+
+# Gnome Mutter - [org/gnome/mutter]
+dconf write /org/gnome/mutter/attach-modal-dialogs false
+dconf write /org/gnome/mutter/center-new-windows true
+dconf write /org/gnome/mutter/edge-tiling true
+
+# Nautilus - [org/gnome/nautilus/icon-view]
+dconf write /org/gnome/nautilus/icon-view/default-zoom-level "'standard'"
+## Unstable # dconf write /org/gnome/nautilus/window-state/sidebar-width 157
+dconf write /org/gtk/settings/file-chooser/show-hidden true
+dconf write /org/gtk/settings/file-chooser/sort-directories-first=true
+
+# Night Light - [org/gnome/settings-daemon/plugins/color]
+dconf write /org/gnome/settings-daemon/plugins/color/night-light-enabled true
+
+# Display - [org/gnome/settings-daemon/plugins/xsettings]
+dconf write /org/gnome/settings-daemon/plugins/xsettings/antialiasing "'rgba'"
+
+# Location Services - [org/gnome/system/location]
+dconf write /org/gnome/system/location/enabled true
+
+# Gnome Terminal - [org/gnome/terminal/legacy]
+dconf write /org/gnome/terminal/legacy/default-show-menubar false
+dconf write /org/gnome/terminal/legacy/keybindings/toggle-menubar "'<Alt>m'"
+dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/audible-bell false
+dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/cursor-shape "'ibeam'"
+dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/font "'Hack 12'"
+dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/use-system-font false
+dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/use-theme-colors false
+
+# Gnome Extensions ----------------------------------------------------------------------------
+
+# Clock Override - [org/gnome/shell/extensions/clock_override]
+dconf write /org/gnome/shell/extensions/clock_override/override-string "'%A  | %l:%M:%S %p  |  %b %d'"
+
+# Lock Keys - [org/gnome/shell/extensions/lockkeys]
+dconf write /org/gnome/shell/extensions/lockkeys/notifications false
+dconf write /org/gnome/shell/extensions/lockkeys/style "'show-hide'"
+
+# Notification Alert - [org/gnome/shell/extensions/notifications-alert]
+dconf write /org/gnome/shell/extensions/notifications-alert/blinkrate 0
+dconf write /org/gnome/shell/extensions/notifications-alert/color "'#00b1ff'"
+
+# Apps View Columns - [org/gnome/shell/extensions/set-columns]
+dconf write /org/gnome/shell/extensions/set-columns/columns-max 7
+
+# System Monitor (Top Panel) - [org/gnome/shell/extensions/system-monitor]
+dconf write /org/gnome/shell/extensions/system-monitor/background "'#ffffff16'"
+dconf write /org/gnome/shell/extensions/system-monitor/battery-display false
+dconf write /org/gnome/shell/extensions/system-monitor/battery-graph-width 100
+dconf write /org/gnome/shell/extensions/system-monitor/battery-hidesystem false
+dconf write /org/gnome/shell/extensions/system-monitor/battery-show-menu false
+dconf write /org/gnome/shell/extensions/system-monitor/battery-show-text false
+dconf write /org/gnome/shell/extensions/system-monitor/battery-time false
+dconf write /org/gnome/shell/extensions/system-monitor/center-display false
+dconf write /org/gnome/shell/extensions/system-monitor/compact-display false
+dconf write /org/gnome/shell/extensions/system-monitor/cpu-display true
+dconf write /org/gnome/shell/extensions/system-monitor/cpu-graph-width 100
+dconf write /org/gnome/shell/extensions/system-monitor/cpu-refresh-time 1000
+dconf write /org/gnome/shell/extensions/system-monitor/cpu-show-menu false
+dconf write /org/gnome/shell/extensions/system-monitor/cpu-show-text true
+dconf write /org/gnome/shell/extensions/system-monitor/cpu-style "'digit'"
+dconf write /org/gnome/shell/extensions/system-monitor/disk-display false
+dconf write /org/gnome/shell/extensions/system-monitor/disk-show-menu false
+dconf write /org/gnome/shell/extensions/system-monitor/fan-show-menu false
+dconf write /org/gnome/shell/extensions/system-monitor/icon-display false
+dconf write /org/gnome/shell/extensions/system-monitor/memory-refresh-time 1000
+dconf write /org/gnome/shell/extensions/system-monitor/memory-show-menu false
+dconf write /org/gnome/shell/extensions/system-monitor/memory-show-text true
+dconf write /org/gnome/shell/extensions/system-monitor/memory-style "'digit'"
+dconf write /org/gnome/shell/extensions/system-monitor/move-clock false
+dconf write /org/gnome/shell/extensions/system-monitor/net-display false
+dconf write /org/gnome/shell/extensions/system-monitor/net-show-menu false
+dconf write /org/gnome/shell/extensions/system-monitor/net-style "'digit'"
+dconf write /org/gnome/shell/extensions/system-monitor/show-tooltip false
+dconf write /org/gnome/shell/extensions/system-monitor/swap-display false
+dconf write /org/gnome/shell/extensions/system-monitor/swap-show-menu false
+dconf write /org/gnome/shell/extensions/system-monitor/thermal-show-menu false
+
+# System Menu Tweaks Button - [org/gnome/shell/extensions/tweaks-system-menu]
+dconf write /org/gnome/shell/extensions/tweaks-system-menu/merge-with-settings false

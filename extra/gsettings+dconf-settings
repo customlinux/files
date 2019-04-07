@@ -1,0 +1,45 @@
+gsettings set org.gnome.Terminal.Legacy.Settings default-show-menubar false
+gsettings set org.gnome.settings-daemon.plugins.xsettings antialiasing 'rgba'
+gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+gsettings set org.gnome.mutter attach-modal-dialogs false
+gsettings set org.gnome.mutter center-new-windows true
+gsettings set org.gnome.mutter edge-tiling true
+gsettings set org.gnome.desktop.wm.preferences resize-with-right-button false
+gsettings set org.gnome.desktop.interface show-battery-percentage true
+gsettings set org.gnome.desktop.interface clock-show-date true
+gsettings set org.gnome.desktop.interface clock-show-seconds true
+gsettings set org.gnome.desktop.datetime automatic-timezone true
+gsettings set org.gnome.desktop.interface clock-format 12h
+gsettings set org.gnome.desktop.interface font-name 'Clear Sans Medium, Medium 11'
+gsettings set org.gnome.desktop.interface document-font-name 'Clear Sans 11'
+gsettings set org.gnome.desktop.interface monospace-font-name 'Clear Sans Thin, weight=255 11'
+gsettings set org.gnome.desktop.wm.preferences titlebar-font 'Clear Sans Bold 11'
+gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize:'
+gsettings set org.gnome.desktop.interface icon-theme 'la-capitaine'
+gsettings set org.gnome.desktop.interface cursor-theme 'capitaine-cursors'
+gsettings set org.gnome.desktop.background picture-uri /usr/share/backgrounds/gnome/mojave-timed.xml
+gsettings set org.gnome.desktop.screensaver picture-uri /usr/share/backgrounds/gnome/mojave-timed.xml
+# Some newer useful gsettings and dconf settings
+gsettings set org.gnome.desktop.wm.preferences action-double-click-titlebar 'none'
+gsettings set org.gnome.desktop.wm.preferences action-middle-click-titlebar 'toggle-maximize'
+dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/cursor-shape "'ibeam'"
+dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/use-system-font false
+dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/font "'Hack 12'"
+dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/audible-bell false
+dconf write /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/use-theme-colors false
+dconf write /org/gnome/terminal/legacy/keybindings/toggle-menubar "'<Alt>m'"
+dconf write /org/gnome/shell/extensions/notifications-alert/color "'#00b1ff'"
+dconf write /org/gnome/shell/extensions/notifications-alert/blinkrate 0
+dconf write /net/launchpad/plank/docks/dock1/monitor "'eDP-1'"
+dconf write /net/launchpad/plank/docks/dock1/hide-mode "'window-dodge'"
+dconf write /org/gnome/gnome-system-monitor/current-tab "'resources'"
+dconf write /org/gnome/nautilus/window-state/sidebar-width 157
+dconf write /org/gnome/nautilus/icon-view/default-zoom-level "'standard'"
+dconf write /org/gtk/settings/file-chooser/show-hidden true
+dconf write /org/gtk/settings/file-chooser/sort-directories-first true
+dconf write /org/gnome/shell/extensions/set-columns/columns-max 7
+dconf write /org/gnome/system/location/enabled true
+dconf write /org/gnome/desktop/search-providers/disable-external true
+# ^ gsettings set org.gnome.desktop.search-providers disabled "['org.gnome.Nautilus.desktop', 'org.manjaro.pamac.manager.desktop', 'org.gnome.Terminal.desktop']"
+dconf write /org/gnome/shell/extensions/lockkeys/notifications false
+dconf write /org/gnome/shell/extensions/clock_override/override-string "'%A  | %l:%M:%S %p  |  %b %d'"
